@@ -1,4 +1,4 @@
-ultimate_unicorn_progressbar
+ultimate unicorn progressbar
 ============================
 
 CSS3 unicorn progressbar with ultimate rainbow power!
