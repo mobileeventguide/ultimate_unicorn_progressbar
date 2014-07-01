@@ -1,0 +1,80 @@
+.wrapper {
+  width: 80%;
+}
+
+.dummy_width {
+	width: 40%; /* Sets the progress to 40% */
+}
+
+/* Set the base of our loader */
+.progressbar {
+	background: #282828;
+	width: 100%;
+	height: 12px;
+	border: 5px solid #282828;
+	border-radius: 20px;
+	box-shadow: 0px 5px 17px rgba(40, 40, 40, 0.5);
+	margin: 6px 0px;
+}
+
+.progressbar .bar {
+  background: #f15a5a;
+	height: 12px;
+	border-radius: 12px;
+}
+
+.progressbar .bar .unicorn {
+  background: url('8_bit_unicorn.png');
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  float: right;
+  margin-top: -10px;
+  margin-right: -10px;
+}
+
+/* Set the linear gradient tile for the animation and the playback */
+.progressbar .bar .fill {
+	width: 100%;
+	height: 12px;
+	border-radius: 20px;
+	box-shadow: inset 0px 0px 6px 2px rgba(255,255,255,.3);
+	-webkit-animation: progress 1s linear infinite;
+	-moz-animation: progress 1s linear infinite;
+	animation: progress 1s linear infinite;
+	background-size: 100px 100px;
+	background-repeat: repeat-x;
+
+  /* Rainbow stripe background */
+	background-image: linear-gradient(
+    -90deg,
+    rgba(241, 90, 90, 1.0) 10%,
+    rgba(240, 196, 25, 1.0) 10%,
+    rgba(240, 196, 25, 1.0) 30%,
+    rgba(78, 186, 111, 1) 30%,
+    rgba(78, 186, 111, 1) 50%,
+    rgba(45,149,191,1) 50%,
+    rgba(45,149,191,1) 70%,
+    rgba(149,91,165,1) 70%,
+    rgba(149,91,165,1) 90%,
+    rgba(241, 90, 90, 1.0) 90%,
+    rgba(241, 90, 90, 1.0)
+    );
+}
+
+@-webkit-keyframes progress
+{
+	to {background-position: -100px 0;}
+}
+
+@-moz-keyframes progress
+{
+  to {background-position: -100px 0;}
+}
+
+@keyframes progress
+{
+  to {background-position: -100px 0;}
+}
