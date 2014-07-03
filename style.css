@@ -3,8 +3,15 @@
 }
 
 .dummy_width {
-	width: 40%; /* Sets the progress to 40% */
+	width: 0%;
+  -webkit-animation: dw 10s forwards ease-out;
+  -moz-animation: dw 10s forwards ease-out;
+  animation: dw 10s forwards ease-out;
 }
+
+@-webkit-keyframes dw { to {width: 100%;} }
+@-moz-keyframes dw { to {width: 100%;} }
+@keyframes dw { to {width: 100%;} }
 
 /* Set the base of our loader */
 .progressbar {
@@ -13,7 +20,7 @@
 	height: 12px;
 	border: 5px solid #282828;
 	border-radius: 20px;
-	box-shadow: 0px 5px 17px rgba(40, 40, 40, 0.5);
+	box-shadow: 0px 5px 17px rgba(40, 40, 40, 0.5), inset 0 0 3px rgba(255, 255, 255, 0.5);
 	margin: 6px 0px;
 }
 
